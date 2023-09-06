@@ -1,0 +1,80 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FF8B45;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 40%;
+            margin: 0 auto;
+            background-color: #F9FAFC;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            display: flex;
+            overflow: hidden;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .user-info {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .user-info h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .user-info p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #101314;
+        }
+
+        .profile-image {
+            flex: 1;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .profile-image img {
+            max-width: 60%;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #modify-button {
+            background-color: #FF8B45;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+}
+
+        #modify-button:hover {
+            background-color: #FF7040;
+            }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .user-info, .profile-image {
+                flex: 1;
+                padding: 20px;
+                text-align: center;
+            }
+            .user-info h1 {
+                font-size: 20px;
+            }
+        }

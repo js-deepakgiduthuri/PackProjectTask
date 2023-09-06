@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/edit_styles.css">
+    <title>Edit User Profile</title>
+</head>
+<body>
+    <header>
+        <h1>Edit User Profile</h1>
+    </header>
+    <main>
+        <section class="user-info">
+            <h2>Edit User Information</h2>
+            <form id="user-form" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="{{ user_data['name'] }}">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" name="age" value="{{ user_data['age'] }}">
+                </div>
+                <div class="form-group">
+                    <label for="place">Place:</label>
+                    <input type="text" id="place" name="place" value="{{ user_data['place'] }}">
+                </div>
+                <div class="form-group">
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio">{{ user_data['bio'] }}</textarea>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" value="{{ user_data['username'] }}">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="{{ user_data['email'] }}">
+                </div>
+                <div class="form-group">
+                    <label for="avatar">Avatar:</label>
+                    <input type="file" id="avatar" name="avatar" accept="image/*">
+                </div>
+                <button type="submit" id="save-button">Save</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
