@@ -10,3 +10,7 @@ Basic Requirements to run the project: <br>
 **Python** : Latest version preferred 3.11<br>
 **Flask**  : Latest version preferred
 
+You can run the application through command prompt.<br>
+- Enter the project folder using cd command.<br>
+- Run the application using 'python app.py'
+
